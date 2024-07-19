@@ -1,3 +1,7 @@
+let isValid = true;
+let messages = [];
+
+
 document.addEventListener('DOMContentLoaded', function() {
 
     const form = document.getElementById('registration-form');
@@ -12,8 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const password = document.getElementById('password').value.trim();
 
 
-        let isValid = true;
-        let messages = [];
+       
 
         if (username.length < 3) {
             isValid = false;
